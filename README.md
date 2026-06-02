@@ -145,9 +145,11 @@ Coleção de exemplos focados na construção de tabelas utilizadas em documento
 1. Baixe a pasta do projeto desejado;
 2. Acesse o Overleaf;
 3. Clique em **New Project → Upload Project**;
-4. Envie o projeto compactado;
+4. Envie o projeto compactado ou copie o código do arquivo e cole na área do overleaf;
 5. Compile normalmente.
 
+## PDF
+No caso do PDF basta clicar no arquivo e ele irá abrir. Contudo em caso de:"Error rendering embedded code" será necessário baixar o arquivo através do icone de seta para baixo presente na barra superior.
 ---
 
 # 🛠️ Tecnologias Utilizadas
