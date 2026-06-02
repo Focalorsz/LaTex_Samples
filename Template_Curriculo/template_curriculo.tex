@@ -1,0 +1,96 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[left=1.45cm,right=1.45cm,top=1.25cm,bottom=1.25cm]{geometry}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{parskip}
+\usepackage{tabularx}
+
+\definecolor{accent}{HTML}{8B0000}
+\definecolor{textgray}{HTML}{404040}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{3pt}
+\setlist[itemize]{leftmargin=1.1em,itemsep=2pt,topsep=2pt}
+
+\titleformat{\section}
+  {\large\bfseries\color{accent}}
+  {}
+  {0pt}
+  {}
+  [\vspace{2pt}\titlerule]
+
+\newcommand{\cvitem}[2]{\textbf{#1} #2\par}
+
+\begin{document}
+\color{textgray}
+
+{\LARGE \textbf{NOME COMPLETO}}\par
+\vspace{2pt}
+{\large \textcolor{accent}{Estudante de Engenharia de Software | Área de interesse / vaga}}\par
+\vspace{6pt}
+
+\begin{tabularx}{\textwidth}{X X}
+Cidade -- UF & \href{mailto:email@exemplo.com}{email@exemplo.com} \\
+\href{https://www.linkedin.com/in/exemplo}{linkedin.com/in/exemplo} & \href{https://github.com/exemplo}{github.com/exemplo} \\
+\end{tabularx}
+
+\vspace{2pt}
+\hrule
+\vspace{8pt}
+
+\section*{Perfil}
+Estudante de Engenharia de Software com experiência em documentação técnica, organização de informações e desenvolvimento de soluções computacionais. Interesse em contribuir com atividades de revisão textual, padronização de documentos, relatórios e fluxos editoriais.
+
+\section*{Formação acadêmica}
+\cvitem{Bacharelado em Engenharia de Software}{\textit{Universidade Exemplo} \hfill Em andamento \\
+Previsão de conclusão: 202X \\
+X\textdegree{} semestre}
+
+\section*{Experiências relevantes}
+
+\textbf{Nome da experiência / instituição}
+\begin{itemize}
+    \item Descrição objetiva da atividade principal.
+    \item Destaque de responsabilidade, comunicação ou organização.
+    \item Resultado ou contribuição prática.
+\end{itemize}
+
+\textbf{Outra experiência / projeto}
+\begin{itemize}
+    \item Descrição objetiva da atividade principal.
+    \item Destaque de responsabilidade, comunicação ou organização.
+    \item Resultado ou contribuição prática.
+\end{itemize}
+
+\section*{Projetos e produção técnica}
+\begin{itemize}
+    \item Desenvolvimento de material técnico em \LaTeX{}.
+    \item Criação e manutenção de repositórios no GitHub.
+    \item Participação em projetos colaborativos e produção de documentação.
+\end{itemize}
+
+\section*{Competências}
+\begin{tabularx}{\textwidth}{>{\bfseries}p{3.7cm} X}
+Documentação técnica & \LaTeX{}, Overleaf, redação técnica e formatação de documentos \\
+Pesquisa acadêmica & Levantamento bibliográfico e análise de artigos científicos \\
+Organização de dados & Estruturação de informações, revisão e elaboração de relatórios \\
+Comunicação & Produção de conteúdo e divulgação institucional \\
+Tecnologias & Git, GitHub, Python, HTML, CSS, JavaScript, MySQL \\
+Idiomas & Português (nativo) e Inglês para leitura técnica \\
+\end{tabularx}
+
+\section*{Informações adicionais}
+\begin{itemize}
+    \item Trabalho colaborativo
+    \item Facilidade de aprendizado
+    \item Interesse em documentação e editoração
+\end{itemize}
+
+\end{document}

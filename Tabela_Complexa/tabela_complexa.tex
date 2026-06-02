@@ -1,0 +1,85 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[left=1.5cm,right=1.5cm,top=1.5cm,bottom=1.5cm]{geometry}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{pdflscape}
+\usepackage{tabularx}
+\usepackage[hidelinks]{hyperref}
+\usepackage{caption}
+
+\renewcommand{\arraystretch}{1.2}
+\setlength{\LTpre}{0pt}
+\setlength{\LTpost}{0pt}
+
+\begin{document}
+
+\section*{Modelo de Tabela Complexa}
+
+Este arquivo demonstra o uso de células mescladas, colunas agrupadas, alinhamento refinado e estruturação de tabelas mais densas, úteis em relatórios técnicos e documentos editoriais.
+
+\begin{landscape}
+\small
+\begin{longtable}{p{3.0cm} p{3.8cm} p{3.4cm} p{4.6cm}}
+\caption{Quadro de organização editorial e técnica} \label{tab:quadro}\\
+\toprule
+\textbf{Categoria} & \textbf{Subprocesso} & \textbf{Critério} & \textbf{Observações} \\
+\midrule
+\endfirsthead
+
+\toprule
+\textbf{Categoria} & \textbf{Subprocesso} & \textbf{Critério} & \textbf{Observações} \\
+\midrule
+\endhead
+
+\multirow{4}{*}{Pré-publicação}
+& Submissão & Metadados completos & Título, autor, afiliação e resumo devidamente preenchidos. \\
+& Triagem inicial & Conformidade formal & Verificação de norma, formatação e documentação obrigatória. \\
+& Revisão textual & Clareza e padronização & Correção de estilo, ortografia e consistência visual. \\
+& Controle de versão & Histórico de alterações & Registro de mudanças e organização dos arquivos. \\
+
+\midrule
+\multirow{4}{*}{Publicação}
+& Copyediting & Ajustes de linguagem & Adequação da redação ao padrão editorial da revista. \\
+& Diagramação & Estrutura visual & Organização de títulos, subtítulos, tabelas e figuras. \\
+& Prova final & Conferência técnica & Última revisão antes da disponibilização ao público. \\
+& Indexação & Publicação final & Inserção de dados, DOI e metadados do artigo. \\
+
+\midrule
+\multirow{3}{*}{Pós-publicação}
+& Divulgação & Comunicação institucional & Publicação em canais oficiais e redes sociais. \\
+& Monitoramento & Acompanhamento & Verificação de acesso, leitura e estabilidade dos arquivos. \\
+& Arquivamento & Preservação documental & Organização da versão final e backup do material. \\
+
+\bottomrule
+\end{longtable}
+\end{landscape}
+
+\section*{Exemplo adicional com células mescladas}
+
+\begin{table}[h]
+\centering
+\caption{Resumo de tarefas por etapa}
+\begin{tabular}{|p{3.2cm}|p{3.8cm}|p{3.0cm}|}
+\hline
+\textbf{Etapa} & \textbf{Responsável} & \textbf{Entrega esperada} \\
+\hline
+\multirow{2}{*}{Revisão}
+& Editor & Ajustes gerais do texto \\
+\cline{2-3}
+& Assistente editorial & Conferência de dados e estilo \\
+\hline
+\multirow{2}{*}{Produção}
+& Diagramador & Organização visual do conteúdo \\
+\cline{2-3}
+& Autor & Validação final do material \\
+\hline
+\end{tabular}
+\end{table}
+
+\end{document}

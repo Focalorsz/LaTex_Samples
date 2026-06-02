@@ -1,0 +1,97 @@
+\begin{filecontents*}{references.bib}
+@book{lamport1994latex,
+  author    = {Leslie Lamport},
+  title     = {LaTeX: A Document Preparation System},
+  year      = {1994},
+  publisher = {Addison-Wesley}
+}
+
+@article{smith2024workflow,
+  author  = {Smith, John},
+  title   = {Editorial Workflows in Scientific Publishing},
+  journal = {Journal of Documentation Models},
+  year    = {2024},
+  volume  = {18},
+  number  = {2},
+  pages   = {45-60}
+}
+\end{filecontents*}
+
+\documentclass[conference]{IEEEtran}
+
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{cite}
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs,multirow,array}
+\usepackage[hidelinks]{hyperref}
+
+\title{Modelo de Artigo Científico no Estilo IEEE}
+
+\author{
+\IEEEauthorblockN{Nome do Autor}
+\IEEEauthorblockA{
+Universidade / Instituição\\
+email@exemplo.com
+}
+}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Este modelo apresenta a estrutura básica de um artigo científico no estilo IEEE, incluindo resumo, palavras-chave, seções com referências cruzadas, figura com legenda e bibliografia externa gerenciada via BibTeX.
+\end{abstract}
+
+\begin{IEEEkeywords}
+LaTeX, IEEE, BibTeX, editoração científica, documentação técnica
+\end{IEEEkeywords}
+
+\section{Introdução}
+A padronização de artigos científicos é essencial para garantir leitura fluida, consistência visual e facilidade na gestão editorial. O estilo IEEE é amplamente utilizado em áreas de engenharia e computação \cite{lamport1994latex}.
+
+\section{Metodologia}
+\label{sec:metodologia}
+Como mostrado na Seção~\ref{sec:resultados}, a organização do texto e o uso adequado de referências cruzadas contribuem para a clareza do manuscrito. O fluxo editorial também pode ser tratado de forma estruturada \cite{smith2024workflow}.
+
+\subsection{Referência cruzada}
+O conteúdo desta seção será retomado na discussão apresentada na Seção~\ref{sec:resultados}.
+
+\section{Resultados}
+\label{sec:resultados}
+Os resultados podem ser descritos em conjunto com gráficos, tabelas e análises comparativas. A Figura~\ref{fig:placeholder} ilustra um placeholder para inserção de imagem.
+
+\begin{figure}[!t]
+    \centering
+    \fbox{\rule{0pt}{4cm}\rule{0.95\linewidth}{0pt}}
+    \caption{Figura de exemplo com placeholder}
+    \label{fig:placeholder}
+\end{figure}
+
+\begin{table}[!t]
+\centering
+\caption{Exemplo de tabela no estilo IEEE}
+\label{tab:exemplo}
+\begin{tabular}{lcc}
+\toprule
+Item & Valor A & Valor B \\
+\midrule
+Linha 1 & 10 & 12 \\
+Linha 2 & 15 & 18 \\
+Linha 3 & 20 & 25 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Discussão}
+A leitura do material evidencia a importância de organização textual, consistência na formatação e uso correto de bibliografia externa. Isso facilita a revisão por pares e a publicação final.
+
+\section{Conclusão}
+Este template foi montado para demonstrar domínio da estrutura IEEE, incluindo abstração, seções numeradas, figura, tabela, citações e BibTeX.
+
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
+\end{document}

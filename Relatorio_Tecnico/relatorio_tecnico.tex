@@ -1,0 +1,118 @@
+\documentclass[12pt,a4paper]{report}
+
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs,multirow,array,longtable}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Relatório Técnico}
+\rhead{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+\begin{document}
+
+% ---------- CAPA ----------
+\begin{titlepage}
+\centering
+\vspace*{2cm}
+
+{\Large \textbf{NOME DA INSTITUIÇÃO / UNIVERSIDADE}}\\[1.5cm]
+
+{\LARGE \textbf{RELATÓRIO TÉCNICO}}\\[0.7cm]
+{\large \textbf{Título do Relatório}}\\[2.0cm]
+
+\begin{flushleft}
+\textbf{Autor:} Nome Completo\\
+\textbf{Curso:} Nome do Curso\\
+\textbf{Disciplina / Projeto:} Nome da disciplina ou projeto\\
+\textbf{Professor / Orientador:} Nome do professor\\
+\end{flushleft}
+
+\vfill
+Brasília -- DF\\
+2025
+\end{titlepage}
+
+\pagenumbering{roman}
+\tableofcontents
+\listoffigures
+\listoftables
+
+\clearpage
+\pagenumbering{arabic}
+
+% ---------- TEXTO ----------
+\chapter{Introdução}
+Este relatório técnico apresenta uma visão estruturada sobre o tema estudado, com foco em organização, clareza e padronização da documentação. O objetivo deste modelo é servir como base para relatórios acadêmicos, projetos de engenharia e registros técnicos.
+
+\chapter{Objetivos}
+\section{Objetivo geral}
+Descrever o problema, o contexto e os resultados obtidos no desenvolvimento do trabalho.
+
+\section{Objetivos específicos}
+\begin{itemize}
+    \item Organizar a documentação técnica de forma padronizada.
+    \item Apresentar dados, análises e resultados com clareza.
+    \item Utilizar recursos do \LaTeX{} para melhor estruturação do texto.
+\end{itemize}
+
+\chapter{Metodologia}
+A metodologia adotada pode incluir levantamento bibliográfico, análise de documentos, desenvolvimento de protótipos, testes e consolidação dos resultados.
+
+\section{Procedimentos}
+\begin{enumerate}
+    \item Definição do problema.
+    \item Levantamento de referências.
+    \item Execução das atividades.
+    \item Consolidação e análise dos resultados.
+\end{enumerate}
+
+\section{Exemplo de figura}
+\begin{figure}[h]
+    \centering
+    \fbox{\rule{0pt}{4cm}\rule{0.8\textwidth}{0pt}}
+    \caption{Placeholder para inserção de figura}
+    \label{fig:placeholder}
+\end{figure}
+
+\section{Exemplo de tabela}
+\begin{table}[h]
+\centering
+\caption{Exemplo de tabela com células mescladas}
+\label{tab:exemplo}
+\begin{tabular}{lccc}
+\toprule
+\multirow{2}{*}{Categoria} & \multicolumn{3}{c}{Indicadores} \\
+\cmidrule(lr){2-4}
+ & 2023 & 2024 & 2025 \\
+\midrule
+Qualidade & 85 & 90 & 94 \\
+Desempenho & 78 & 83 & 88 \\
+Acurácia & 80 & 86 & 91 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\chapter{Resultados e Discussão}
+Os resultados devem ser descritos de maneira objetiva, destacando tendências, impactos e observações relevantes. A discussão deve conectar os dados obtidos ao problema proposto.
+
+\chapter{Conclusão}
+O relatório evidencia a importância de uma estrutura clara, reprodutível e tecnicamente consistente. O uso do \LaTeX{} facilita a organização do conteúdo e melhora a apresentação final do documento.
+
+\begin{thebibliography}{9}
+\bibitem{lamport}
+LAMPORT, Leslie. \textit{LaTeX: A Document Preparation System}. Reading: Addison-Wesley, 1994.
+
+\bibitem{knuth}
+KNUTH, Donald E. \textit{The TeXbook}. Reading: Addison-Wesley, 1984.
+\end{thebibliography}
+
+\end{document}

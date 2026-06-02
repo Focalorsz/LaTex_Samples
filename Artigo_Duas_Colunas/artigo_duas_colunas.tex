@@ -1,0 +1,80 @@
+\documentclass[10pt,a4paper,twocolumn]{article}
+
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[left=1.6cm,right=1.6cm,top=1.7cm,bottom=1.7cm]{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs,multirow,array}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{caption}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Modelo de Artigo em Duas Colunas}
+\rhead{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+\title{\textbf{Título do Artigo em Duas Colunas}}
+\author{
+Nome do Autor \\
+\small Universidade / Instituição \\
+\small \texttt{email@exemplo.com}
+}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Este modelo foi criado para servir como base de artigos acadêmicos em duas colunas, com estrutura simples, clara e adaptável. O objetivo é demonstrar organização textual, uso de seções, figuras, tabelas e formatação adequada para trabalhos técnicos.
+\end{abstract}
+
+\noindent\textbf{Palavras-chave:} artigo acadêmico; duas colunas; \LaTeX; diagramação.
+
+\section{Introdução}
+Este texto apresenta um modelo de artigo em duas colunas. Ele pode ser usado como base para trabalhos acadêmicos, relatórios de pesquisa e manuscritos técnicos.
+
+\section{Estrutura do documento}
+A estrutura foi pensada para facilitar a leitura e a organização do conteúdo. Cada seção pode ser expandida conforme a necessidade do autor.
+
+\subsection{Exemplo de referência cruzada}
+Como demonstrado na Seção~\ref{sec:metodologia}, a divisão do trabalho em etapas melhora a clareza do manuscrito.
+
+\section{Metodologia}
+\label{sec:metodologia}
+A metodologia pode incluir pesquisa bibliográfica, desenvolvimento experimental, análise de dados ou estudo de caso. O importante é manter consistência entre objetivos, métodos e resultados.
+
+\section{Exemplo de figura}
+\begin{figure}[t]
+    \centering
+    \fbox{\rule{0pt}{3.5cm}\rule{0.9\linewidth}{0pt}}
+    \caption{Figura de exemplo com placeholder}
+    \label{fig:exemplo}
+\end{figure}
+
+\section{Exemplo de tabela}
+\begin{table}[t]
+\centering
+\caption{Tabela resumida de exemplo}
+\label{tab:exemplo}
+\begin{tabular}{lcc}
+\toprule
+Item & Valor A & Valor B \\
+\midrule
+Linha 1 & 10 & 12 \\
+Linha 2 & 15 & 18 \\
+Linha 3 & 20 & 25 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Resultados}
+Os resultados devem ser apresentados de forma objetiva, com apoio de tabelas, figuras e comparações quando necessário.
+
+\section{Conclusão}
+Este modelo é adequado para documentos simples e claros em duas colunas, oferecendo uma base profissional para publicações acadêmicas.
+
+\end{document}
